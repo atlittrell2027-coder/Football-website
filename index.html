@@ -1,0 +1,561 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Football</title>
+    <meta name="description" content="Created with Keepthescore.com, the online scoreboard and leaderboard tool">
+            <link rel="stylesheet" type="text/css" href="./Static/assets-sb/scoreboard-Duy2gOv0.css">
+    <link rel="stylesheet" href="./Static/vendorbootstrap-iconsfont/bootstrap-icons.css">
+    <link rel="shortcut icon" href="./Static/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./Static/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Static/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Static/favicon-16x16.png">
+    <link rel="manifest" href="./manifest.json">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="canonical" href="https://keepthescore.com/board/bcvbhnrqmdzte/">
+
+    <!-- Begin Twitter, Facebook metadata -->
+    <meta property="og:title" content="Football">
+    <meta property="og:description" content="Created with Keepthescore.com, the online scoreboard and leaderboard tool">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://keepthescore.com/board/bcvbhnrqmdzte">
+    <meta property="og:image" content="https://keepthescore.com/preview.png?token=zvmxbsfbkfmkr">
+    <meta property="og:image:secure_url" content="https://keepthescore.com/preview.png?token=zvmxbsfbkfmkr">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Football - Product screenshot">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@keep_the_score">
+    <meta name="twitter:image" content="https://keepthescore.com/preview.png?token=zvmxbsfbkfmkr">
+    <meta name="twitter:title" content="Football">
+    <meta name="twitter:description" content="Created with Keepthescore.com, the online scoreboard and leaderboard tool">
+    <!-- End Twitter, Facebook metadata -->
+
+    <!-- Begin json-ld -->
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "name": "KeepTheScore",
+              "url": "https://keepthescore.com",
+              "logo": "https://keepthescore.com/static/logo_white.svg",
+              "sameAs": [
+                "https://www.linkedin.com/company/keep-the-score/",
+                "https://www.facebook.com/keepthescore",
+                "https://www.instagram.com/keep_the_score/",
+                "https://x.com/keep_the_score",
+                "https://www.threads.net/@keep_the_score",
+                "https://bsky.app/profile/keepthescore.com"
+              ],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "email": "hi@keepthescore.com",
+                "contactType": "customer service"
+              }
+            },
+        
+        {
+          "@type": "WebApplication",
+          "name": "KeepTheScore",
+          "applicationCategory": "SportsApplication, GameApplication, EducationApplication",
+          "operatingSystem": "All",
+          "offers": {
+            "@type": "AggregateOffer",
+            "lowPrice": "0",
+            "highPrice": "39",
+            "priceCurrency": "USD",
+            "offerCount": "3"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.6",
+            "ratingCount": "26",
+            "bestRating": "5"
+          },
+          "featureList": "Real-time score tracking, Custom leaderboards, Sports scoreboards, Goal trackers, Team management",
+          "screenshot": "https://keepthescore.com/preview.png?token=zvmxbsfbkfmkr",
+      "url": "https://keepthescore.com/board/bcvbhnrqmdzte/",
+      "description": "Created with Keepthescore.com, the online scoreboard and leaderboard tool"
+    }
+        
+        ]
+      }
+    </script>
+    <!-- End json-ld -->     
+
+
+
+    <!-- Debug panel for DEV environment and admin user -->
+    
+
+
+
+    
+    
+    
+    
+
+<!-- show_ads=False -->
+
+</head>
+<body id="body-handle">
+
+
+<div class="d-flex flex-column min-vh-100">
+    
+    
+        
+<!-- App Navigation for logged-in users -->
+<nav class="navbar navbar-expand navbar-light bg-white border-bottom">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/dashboard/">
+            <img src="./Static/logo.png" alt="Keep The Score" height="30" class="d-none d-md-block">
+            <img src="./Static/logo.png" alt="Keep The Score" height="25" class="d-md-none">
+        </a>
+        
+        <div class="navbar-collapse" id="appNavbar">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link " href="/dashboard/">
+                        <i class="bi bi-speedometer2"></i><span class="d-none d-md-inline ms-1">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/docs/">
+                        <i class="bi bi-book"></i><span class="d-none d-md-inline ms-1">Documentation</span>
+                    </a>
+                </li>
+            </ul>
+            
+            <ul class="navbar-nav">
+                
+                <li class="nav-item">
+                    <a class="nav-link text-primary fw-bold" href="/pricing/">
+                        <i class="bi bi-star-fill"></i><span class="d-none d-md-inline ms-1"></span>
+                    </a>
+                </li>
+                
+                
+                <!-- DEV environment: Quick switch for admin and free users -->
+                
+                
+                
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" 
+       href="#" 
+       id="userDropdown" 
+       role="button" 
+       data-bs-toggle="dropdown" 
+       data-bs-boundary="viewport"
+       aria-expanded="false">
+        <i class="bi bi-person-circle"></i><span class="d-none d-md-inline ms-1"></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end shadow border-0" aria-labelledby="userDropdown">
+        
+        <li class="dropdown-header px-3 py-2">
+            <div class="fw-bold text-dark">Smith</div>
+            <div class="small text-muted"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="92f7f6e6f7f1fad2fff6fbfce6f7e0fce1bcfde0f5">[email&#160;protected]</a></div>
+        </li>
+        <li><hr class="dropdown-divider my-1"></li>
+        
+        
+        <li><a class="dropdown-item py-2 px-3" href="/dashboard/">
+            <i class="bi bi-speedometer2 me-2 text-primary"></i>My Boards
+        </a></li>
+        
+        <li><hr class="dropdown-divider my-1"></li>
+        
+        
+        <li><a class="dropdown-item py-2 px-3" href="/settings/">
+            <i class="bi bi-gear me-2 text-secondary"></i> Settings
+        </a></li>
+        
+        
+        <li><hr class="dropdown-divider my-1"></li>
+        
+        
+        <li><a class="dropdown-item py-2 px-3" href="/docs/contact/">
+            <i class="bi bi-question-circle me-2 text-info"></i>Contact
+        </a></li>
+        <li><a class="dropdown-item py-2 px-3" href="#" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+            <i class="bi bi-megaphone me-2 text-info"></i>Give Feedback
+        </a></li>
+        
+        <li><hr class="dropdown-divider my-1"></li>
+        
+        
+        <li class="px-3 py-2">
+            <form action="/logout/" method="post">
+                <button type="submit" class="btn btn-sm btn-outline-danger w-100">
+                    <i class="bi bi-box-arrow-right me-1"></i>Logout
+                </button>
+            </form>
+        </li>
+    </ul>
+</li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<style>
+    /* Active state styling for dashboard navigation */
+    #appNavbar .nav-link {
+        position: relative;
+        transition: color 0.2s ease;
+    }
+    
+    /* Only apply underline to non-dropdown nav links */
+    #appNavbar .nav-link:not(.dropdown-toggle)::after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color: transparent;
+        transition: background-color 0.2s ease;
+    }
+    
+    #appNavbar .nav-link.active {
+        color: #0d6efd !important;
+        font-weight: 600;
+    }
+    
+    #appNavbar .nav-link.active:not(.dropdown-toggle)::after {
+        background-color: #0d6efd;
+    }
+    
+    #appNavbar .nav-link:hover:not(.dropdown-toggle) {
+        color: #0d6efd;
+    }
+    
+    #appNavbar .nav-link:hover:not(.dropdown-toggle)::after {
+        background-color: rgba(13, 110, 253, 0.5);
+    }
+</style>
+    
+
+    
+    
+
+    
+    
+<!-- Begin flash banner -->
+
+
+    
+    <main class="app-main flex-grow-1">
+        
+    <!-- Data from the backend for vue client -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script id="backend-data" type="application/json">
+        {
+        "board_token": "bcvbhnrqmdzte",
+        "read_token": "zvmxbsfbkfmkr",
+        "edit_token": "bcvbhnrqmdzte",
+        "restricted_token": "hhtrzzqlvcsxp",
+        "view": "ADMIN",
+        "is_user_logged_in": true,
+        "firestore_collection": "sports",
+        "firestore_doc_id": "clbZ0AVqNaytq3M2ZYJC",
+        "features": [],
+        "owner_name": "Smith",
+        "sport": "FOOTBALL",
+        "type": "SPORT"
+      }
+    </script>
+
+    
+
+    <!-- Sentry error tracking: only enable for ad-free users -->
+    <script type="text/javascript">
+        var boardFeatures = [];
+        var sentryEnabled = boardFeatures.includes("ad_free");
+    </script>
+
+    <!-- Vue gets mounted here -->
+    <div id="app"></div>
+
+    <!-- Feedback button: only show for premium users on scoreboards -->
+    
+
+    </main>
+
+    
+    
+        
+<!-- Footer for app pages - minimal version -->
+<footer class="app-footer bg-light border-top py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center text-muted">
+                <small>
+                    © 2025 KeepTheScore ·
+                    <a href="/privacy/" class="text-muted">Privacy</a> ·
+                    <a href="/terms/" class="text-muted">Terms</a>
+                </small>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+
+    
+    
+
+
+<!-- Goal -->
+
+    <form action="/new-goal/" method="POST" name="create_goal" rel="nofollow">
+    </form>
+
+
+<!-- Click counter -->
+
+    <form action="/new-counter/" method="POST" name="create_counter" rel="nofollow">
+    </form>
+
+
+<!-- Self-serve leaderboard -->
+
+    <form action="/new-self-serve-leaderboard/" method="POST" name="create_self_serve" rel="nofollow">
+    </form>
+
+
+
+
+
+
+<!-- Universal Sports Form -->
+<form action="/sport-scoreboard/" method="POST" id="createSportsForm" rel="nofollow">
+    <input type="hidden" id="sport_type" name="sport_type" value="">
+</form>
+
+<script>
+function createSport(sportType) {
+    const form = document.getElementById('createSportsForm');
+    form.querySelector('#sport_type').value = sportType;
+    form.submit();
+}
+</script>
+</div>
+
+
+  
+        <script type="module" crossorigin src="./Static/assets-sb/bookmarks-BuNOqHnL.js"></script>
+        <script type="module" crossorigin src="./Static/assets-sb/scoreboard-BHT3jrlv.js"></script>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"eaf5b69880cd47ab94ee72c9e79e00e8","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+
+
+  
+
+
+<!-- Feedback Modal -->
+<div class="modal" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="feedbackModalLabel">We ❤️ feedback</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form id="feedbackForm" method="post" action="/submit-feedback/" rel="nofollow">
+                <div class="modal-body">
+                    <div id="feedbackFormContent">
+                        <div class="mb-3">
+                            <label for="message">We are here for you, do not hesitate to contact us</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+
+                        </div>
+
+                        <!-- Hidden fields -->
+                        <input type="hidden" name="url" value="https://keepthescore.com/board/bcvbhnrqmdzte">
+                        
+                            <input type="hidden" name="user_email" value="edtech@mdinterns.org">
+                            <input type="hidden" name="user_ltv" value="$0.0">
+                            <input type="hidden" name="first_board" value="FOOTBALL">
+                        
+                        
+                            <input type="hidden" name="board_type" value="SPORT">
+                            
+                                <input type="hidden" name="scoreboard" value="FOOTBALL">
+                            
+                        
+                    </div>
+
+                    <div id="feedbackThankyou" class="text-center no-theme" style="display: none;">
+                        <h4>Thank you!</h4>
+                        <p>We appreciate your input.
+                            
+                                If required, we will get in touch via <strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3d585949585e557d5059545349584f534e13524f5a">[email&#160;protected]</a></strong>.
+                            
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="feedbackSubmit" type="submit" class="btn btn-primary">Submit</button>
+                    <button id="feedbackOk" type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                            style="display: none;">OK
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var form = document.getElementById('feedbackForm');
+        var feedbackModal = document.getElementById('feedbackModal');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Get the form data
+            let formData = new FormData(form);
+
+            // Send the form data via AJAX
+            fetch('/feedback-post/', {
+                method: 'POST',
+                body: formData
+            })
+                .then(function (response) {
+                    if (response.ok) {
+                        // Handle the success response
+                        console.log('Feedback submitted successfully');
+                    } else {
+                        console.error('Error submitting feedback:', response.statusText);
+                        // Throw an error
+                        throw new Error('Error submitting feedback');
+                    }
+                })
+                .catch(function (error) {
+                    throw new Error('Error submitting feedback');
+                });
+            // Show thank you message and OK button
+            document.getElementById('feedbackFormContent').style.display = 'none';
+            document.getElementById('feedbackThankyou').style.display = 'block';
+            document.getElementById('feedbackSubmit').style.display = 'none';
+            document.getElementById('feedbackOk').style.display = 'inline-block';
+        });
+
+        // Reset the modal when it is closed
+        feedbackModal.addEventListener('hidden.bs.modal', function () {
+            // Reset the form
+            form.reset();
+
+            // Show the form content and submit button
+            document.getElementById('feedbackFormContent').style.display = 'block';
+            document.getElementById('feedbackSubmit').style.display = 'inline-block';
+
+            // Hide the thank you message and OK button
+            document.getElementById('feedbackThankyou').style.display = 'none';
+            document.getElementById('feedbackOk').style.display = 'none';
+        });
+    });
+</script>
+<!-- Web analytics -->
+
+
+
+<!-- VIEW = ADMIN -->
+
+
+
+    <!-- Profitwell analytics (for engagement and retention) -->
+    <script id="profitwell-js" data-pw-auth="9eb9942a5a801585ffe3a22e0bee9091">
+        (function (i, s, o, g, r, a, m) {
+            i[o] = i[o] || function () {
+                (i[o].q = i[o].q || []).push(arguments)
+            };
+            a = s.createElement(g);
+            m = s.getElementsByTagName(g)[0];
+            a.async = 1;
+            a.src = r + '?auth=' +
+                s.getElementById(o + '-js').getAttribute('data-pw-auth');
+            m.parentNode.insertBefore(a, m);
+        })(window, document, 'profitwell', 'script', 'https://public.profitwell.com/js/profitwell.js');
+        
+            profitwell('start', {'user_email': 'edtech@mdinterns.org'});
+        
+    </script>
+
+    <!-- Fathom - beautiful, simple website analytics -->
+    <script src="https://cdn.usefathom.com/script.js" data-site="VNPUMDEN" defer></script>
+
+    <!-- Ahrefs Analytics -->
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="PaTsiJUYAVfvzkz9+uzGaA" async></script>
+
+    
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () {
+                (c[a].q = c[a].q || []).push(arguments)
+            };
+            t = l.createElement(r);
+            t.async = 1;
+            t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0];
+            y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "p2gr9iolzi");
+    </script>
+
+    
+    <script>(function (w, d, t, r, u) {
+        var f, n, i;
+        w[u] = w[u] || [], f = function () {
+            var o = {ti: "187167590", enableAutoSpaTracking: true};
+            o.q = w[u], w[u] = new UET(o), w[u].push("pageLoad")
+        }, n = d.createElement(t), n.src = r, n.async = 1, n.onload = n.onreadystatechange = function () {
+            var s = this.readyState;
+            s && s !== "loaded" && s !== "complete" || (f(), n.onload = n.onreadystatechange = null)
+        }, i = d.getElementsByTagName(t)[0], i.parentNode.insertBefore(n, i)
+    })(window, document, "script", "//bat.bing.com/bat.js", "uetq");</script>
+
+    
+    <script>
+        // Global function called after successful signup
+        function onSignupSuccess(userData) {
+            // Track in your analytics tools here
+            console.log('User signed up:', userData);
+
+            // Fathom Analytics
+            if (typeof window.fathom !== 'undefined') {
+                window.fathom.trackEvent('User signup');
+            }
+
+            // Microsoft Clarity
+            if (typeof window.clarity !== 'undefined') {
+                window.clarity('set', 'signup_complete', 'true');
+                if (userData.userId) {
+                    window.clarity('identify', userData.userId);
+                }
+            }
+
+            // Bing UET
+            if (typeof window.uetq !== 'undefined') {
+                window.uetq.push('event', 'signup', {
+                    'event_category': 'conversion',
+                    'event_label': 'user_registration',
+                    'event_value': 1
+                });
+            }
+
+            // Ahrefs Analytics
+            if (window.AhrefsAnalytics != null) {
+                window.AhrefsAnalytics.sendEvent('signup');
+            }
+        }
+    </script>
+
+
+
+</html>
