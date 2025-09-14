@@ -1,0 +1,22 @@
+*{box-sizing:border-box;font-family:Inter,Segoe UI,Arial;margin:0;padding:0}
+body{background:#111;color:#fff;display:flex;align-items:center;justify-content:center;height:100vh}
+.app{width:980px;background:#0f1720;padding:20px;border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,.6)}
+h1{font-size:20px;margin-bottom:10px}
+.teams{display:flex;gap:20px}
+.team{flex:1;background:#0b1220;padding:12px;border-radius:6px}
+.team input{width:100%;padding:8px;margin-bottom:8px;border-radius:4px;border:1px solid #263144;background:#071021;color:#fff}
+.score{display:flex;align-items:center;gap:8px}
+.score button{width:44px;height:44px;border-radius:6px;border:none;background:#1e293b;color:#fff;font-size:20px;cursor:pointer}
+.score span{min-width:60px;text-align:center;font-size:32px;display:inline-block}
+.controls{margin-top:12px;display:flex;gap:12px;align-items:flex-start;flex-wrap:wrap}
+.timer,.possession,.misc{background:#071021;padding:10px;border-radius:6px}
+.timer button,.possession button,.misc button{margin-right:6px;padding:8px 12px;border-radius:6px;border:none;background:#1e293b;color:#fff;cursor:pointer}
+.note{margin-top:10px;font-size:13px;color:#9aa7b2}
+.display{background:transparent;height:100vh;display:flex;align-items:center;justify-content:center}
+.display-inner{width:100%;max-width:1920px;display:flex;align-items:center;justify-content:space-between;padding:40px}
+.disp-team{width:30%;text-align:center}
+.team-name{font-size:48px;font-weight:600}
+.team-score{font-size:140px;font-weight:700;margin-top:6px}
+.disp-middle{width:40%;text-align:center}
+#disp_timer{font-size:72px;font-weight:700;margin-bottom:10px}
+#disp_possession{font-size:20px;color:#ffd700}

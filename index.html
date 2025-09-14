@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Scoreboard Control - KeepTheScore (Standalone)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <h1>Scoreboard Controller</h1>
+  <div class="teams">
+    <div class="team">
+      <input id="teamA_name" value="Home" />
+      <div class="score">
+        <button id="teamA_minus">-</button>
+        <span id="teamA_score">0</span>
+        <button id="teamA_plus">+</button>
+      </div>
+    </div>
+    <div class="team">
+      <input id="teamB_name" value="Away" />
+      <div class="score">
+        <button id="teamB_minus">-</button>
+        <span id="teamB_score">0</span>
+        <button id="teamB_plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <div class="timer">
+      <div>Timer: <span id="timer_display">00:00</span></div>
+      <button id="timer_start">Start</button>
+      <button id="timer_pause">Pause</button>
+      <button id="timer_reset">Reset</button>
+    </div>
+    <div class="possession">
+      <label>Possession:</label>
+      <button id="pos_home">Home</button>
+      <button id="pos_away">Away</button>
+      <button id="pos_none">None</button>
+    </div>
+    <div class="misc">
+      <button id="swap">Swap Teams</button>
+      <button id="reset_all">Reset All</button>
+      <button id="open_display">Open Display (OBS)</button>
+    </div>
+  </div>
+  <p class="note">Changes are saved to localStorage and broadcast to the display.</p>
+</div>
+<script src="control.js"></script>
+</body>
+</html>
